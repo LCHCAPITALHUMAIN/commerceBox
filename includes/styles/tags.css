@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+html{	/* Firefox hack to keep body background at bottom of the page */
+	min-height: 100%;
+	height: auto;
+}
+body{
+	margin:0; padding:0;
+	font-size:90%; font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:#000 url(../images/body_bg.jpg) repeat;
+	/*background:#fff url(../images/body_bg_white.jpg) repeat;*/
+}
+h2, h3, h4, h5, h6 {
+	letter-spacing: -1px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin: 1.2em 0 .1em;color:#333;padding-bottom: .1em;
+}
+h2 {font-size: 132%; margin-top:.2em}
+h3 {font-size: 122%; margin-top:.2em}
+h4 {font-size: 112%}
+h5 {font-size: 102%}
+h6 {font-size: 92%}
+.outerbox h3, .outerbox h2{
+	color:#333;
+}
+.boxtab h2, .outerbox h2 a, .outerbox h3 a{
+	text-decoration:none;
+	color:white;	
+}
+.outerbox h3 a:hover, .outerbox h2 a:hover{
+	color:white;
+	background-image:url(../images/title-bg-over.png);
+}
+/*
+h3{
+	margin:0; margin-bottom:.3em;
+	padding:0;
+	color:#ff8100;
+	font-size:1.1em;
+}*/
+p{
+	margin:.8em 0 0;
+	line-height:140%;
+	word-spacing:.02em;
+	letter-spacing:.04em;
+}
+a{
+	color:#41798d;
+}
+a:hover{
+	color:#e6a800;/*516877*/
+}
+a img{border:0;}
+table, td{
+	border:0;
+	vertical-align:top;
+}
+/* TABLES */
+.table1 {border-collapse:collapse;width:100%;margin-top:1.5em; text-align:left;}
+.table1 thead th {color:#ff8100;font-size:105%;padding:5px 2px;}
+.table1 tbody th {color:#1c71b4;font-size:102%;padding:3px; background-color:#cecece; border:1px solid #ccc}
+.table1 tbody th.sub {font-size:90%;color:#000;background-color:#efefef;padding: 6px;}
+.table1 tbody td{font-size:90%;border:1px solid #ccc;padding:2px;}
+ul{
+	margin-left:0;
+	padding-left:1em;
+}
+ul li{
+	list-style:none;
+}
+ol li, ul li{
+	padding-bottom:.5em;
+}
+#article ul li, #related-articles ul li{
+	margin:0; padding-left:20px;
+	list-style-type:none;
+	background: url(../images/bullet.gif) 0 0.3em no-repeat; 
+}
+blockquote{
+	margin-left:15px;
+	font-style:italic; background:url(../images/ldquo.gif) left top no-repeat;
+}
+blockquote p{
+	margin:0; padding:5px 0 0 20px;
+}
+blockquote.pullquote {
+	float:left;
+	width:10em;
+	margin:0.5em 0.75em 0.25em 0; padding:0.5em;
+	border:3px double #d8752f; border-width:3px 0;
+	color:#333;
+	background:transparent;
+	font:italic 1.2em/1.2 Georgia;
+}
+blockquote.alt {
+  float:right;
+  margin:0.5em 0 0.25em 0.75em;
+}
+.pullquote p {
+  margin:0; padding:0;
+  text-align:center;
+}
+.pullquote p:first-letter {text-transform:uppercase}
+td{vertical-align:top;}

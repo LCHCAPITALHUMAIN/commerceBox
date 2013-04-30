@@ -1,0 +1,287 @@
+#wrapper{
+	z-index:5;
+	position:relative;
+	width:1000px;
+	margin:0 auto;
+}
+#crest{
+	z-index:0;
+	position:absolute;
+	left:0;
+	top:-200px;
+	width:761px;
+	height:832px;
+	background-image:url(../images/crest.png);
+}
+#utilities{
+	z-index:100;
+	position:absolute;
+	right:0;
+	top:0;
+	height:400px;
+	background-color:#000;
+}
+#header, #header a{
+	height:95px;
+	margin-bottom:20px;
+}
+#header p{
+	margin:0; padding:0;
+	text-indent:-99999px;
+}
+#content{
+	padding:10px;
+	overflow:hidden;
+	border:5px solid #fff;
+	border-top:none;
+	background:#fff url(../images/content_bg.jpg) 0px 5px no-repeat;
+	/*background-color:#333;*/
+}
+
+div#footer{
+	clear:both; /* Clear floats in content above */
+	margin:20px 0;
+	height:58px;
+	line-height:58px;
+	color:white;
+	text-transform:uppercase;
+	background:url(../images/Navigation.png) no-repeat;
+}
+span.copyright{
+	display:none;
+}
+.column-w370,.sidebar{
+	margin-right:5px;
+}
+.column-w370,.column-w573,.sidebar,.column-w2{
+	display:inline; /* IE 6- Double Margin Float Hack */
+}
+div.sidebar{
+	width:200px;
+	float:left;
+}
+div.column-w2{
+	width:200px;
+}
+div.column-w370{
+	width:470px;
+}
+div.column-w573{
+	width:760px;
+}
+div.infobox{
+	border:1px solid #ccc; margin:2px; height:3em;line-height:3em;padding-left:1em;
+	background:#fff url(../images/infobox-bg.png) repeat-x;
+}
+.hot-button{
+	margin-top:5px;
+}
+.outerbox{
+	margin-top:5px; padding:5px;
+	background:#353535 url(../images/outerbox-bg-l-corner.jpg) left top no-repeat;
+}
+.boxtab{
+	height:27px;
+	background:#fcfcfc url(../images/boxtab-bg.gif) top right no-repeat;
+}
+.outerbox h2, .outerbox h3{
+	color:#fff;
+}
+.innerbox h2, .innerbox h3{
+	color:#000;
+}
+.boxtab h2, .boxtab h3{
+	color:#fff;
+	height:27px;
+	display:table-cell;
+	padding-right:38px;
+	background:url(../images/boxtab-h3-bg.jpg) top right no-repeat;
+}
+.boxtab h3 a{
+	padding-right:22px;
+	background:url(../images/footer-bullet.png) center right no-repeat;
+}
+.innerbox{
+	overflow:hidden;
+	margin:0; padding:5px;
+	background:#fcfcfc url(../images/innerbox-bg.jpg) no-repeat;
+}
+div.group{
+	margin-top:5px;
+}
+/* ------ NAVIGATION STYLES ------ */
+div#nav-top{
+	margin-bottom:20px;
+	height:44px;
+	color:white;
+	padding-left:20px;
+	text-transform:uppercase;
+	background:url(../images/top-navigation-bg.png) no-repeat;
+}
+#footer{
+	padding-right:20px;
+}
+#footer ul{
+	float:right;
+}
+#nav-top ul, #footer ul{
+	margin:0; padding:0;
+	list-style:none;
+}
+#nav-top ul li, #footer ul li{
+	float:left;
+	font-weight:bold;
+	position: relative; /* Important for subnav x and y axis */
+}
+#nav-top ul li a, #footer ul li a{
+	color:white;
+	padding-right:25px;
+	text-decoration:none;
+	padding-left:24px;
+	line-height:44px;
+	height:44px;
+	display:block;
+	float:left;
+	font-size:1.2em;
+	background:url(../images/footer-bullet.png) 0 .85em no-repeat;
+}
+#nav-top ul li a:hover, #footer ul li a:hover{
+	color:red;
+}
+#nav-top ul li ul.subnav { 
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
+    left: 0; top: 43px;  
+    background: #353b40; 
+    display: none;  
+    border: 1px solid #111;
+	z-index:90;
+	font-size:.8em;
+}  
+html #nav-top ul li ul.subnav li{
+	float: left;
+	padding-left:5px;
+}
+html #nav-top ul li ul.subnav li a { 
+	display:block;
+    width: 170px;
+	padding-left: 20px;
+	height:2em;
+	line-height:2em;
+    background: #353b40 url(../images/footer-bullet.png) 0 .5em no-repeat;  
+} 
+*+html #nav-top ul li ul li{
+	zoom:1; /* give hasLayout to prevent whitespace gap in IE7 */
+}
+#nav-top ul ul,#footer ul ul{
+	display:none;
+}
+.sidebar ul, #que ul{
+	margin:0; padding:0;
+}
+.sidebar li, #que li{
+	margin:0; padding:.5em 0;
+	background:none;
+	font-size:90%;
+	list-style:none;
+}
+.sidebar li a, #que li a{
+	display:block;
+	text-decoration:none;
+	background:url(../images/hr.gif) left bottom repeat-x;
+}
+#que li a:visited,#que li a:active {
+	color:#333;
+}
+/* ------ multi-step page ----- */
+ul#crumbs, ul#crumbs li {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	}		
+ul#crumbs {
+	height:2.3em;
+	/*border:1px solid #dedede;*/
+	}
+ul#crumbs li {
+	float:left;
+	line-height:2.3em;
+	background: transparent;
+	color:#777;
+	padding-left:.75em;
+	}
+ul#crumbs li.currentStep a {
+	background: transparent url(/modules/admin/includes/images/crumbs.gif) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+	color: #f00;
+}		
+ul#crumbs li a {
+	background:url(/modules/admin/includes/images/crumbs.gif) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+	}							
+ul#crumbs li a:link,
+ul#crumbs li a:visited {
+	/*background: transparent;
+	color:#777;*/
+	text-decoration:none;
+	}	
+
+/* ------ NUMBERED LIST ------ */
+.numbered-row .number-col {
+	float:left;
+	top: 0;
+	width: 2.3em;
+	margin:0 auto;
+	text-align: center;
+}
+.numbered-row .number{
+	display: block;
+	margin-top: -5px;
+	font: 700 2.1em arial, sans-serif;
+	color: #888;
+}
+.details{
+	margin:0 0 0 3.5em;
+	padding:0 0 1em 1.2em;
+}
+.numbered-row h3, .numbered-row h3 a{
+	color:#09C;
+	font-style:italic;
+	text-decoration:none;
+}
+.numbered-row{
+	border:none;
+}
+.numbered-row .number a{
+	color: #888;
+	text-decoration:none;
+}
+.numbered-row .details{
+	margin-left:2.5em;
+}
+/* ------GENERAL STYLES------- */
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.aright{
+	text-align:right;
+}
+.aleft{
+	text-align:left;
+}
+.acenter{
+	text-align:center;
+}
+.highlight {color:#E17000}
+.subdued {color:#999}
+.error {color:#c00;font-weight:bold}
+.success {color:#390;font-weight:bold}
+.caption {color:#999;font-size:11px}
+div.box{
+	background:#fff url(../images/box-bg.jpg) left top repeat-x;padding:5px; margin-top:5px;
+}
+.containment{overflow:hidden;width:100%}

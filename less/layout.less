@@ -1,0 +1,84 @@
+body{
+	background: black url('../img/bg-body.jpg') top center fixed no-repeat;
+}
+#advert-header {
+	margin: 1em 0;
+	color: grey;
+}
+#site-header {
+	margin: 1.5em 0 .5em 0;
+	min-height: 140px;
+	position: relative;
+	img {
+		margin-right: 1em;
+	}
+	#nav-utility {
+		top: 0;
+		right: 0;
+		position: absolute;
+	}
+	#nav-site {
+		margin: 1em 0;
+	}
+	.navbar-inner {
+		border-color: #720000;
+		background-image: linear-gradient(bottom, rgb(92,10,22) 28%, rgb(158,6,19) 100%);
+		background-image: -o-linear-gradient(bottom, rgb(92,10,22) 28%, rgb(158,6,19) 100%);
+		background-image: -moz-linear-gradient(bottom, rgb(92,10,22) 28%, rgb(158,6,19) 100%);
+		background-image: -webkit-linear-gradient(bottom, rgb(92,10,22) 28%, rgb(158,6,19) 100%);
+		background-image: -ms-linear-gradient(bottom, rgb(92,10,22) 28%, rgb(158,6,19) 100%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.28, rgb(92,10,22)),
+			color-stop(1, rgb(158,6,19))
+		);
+		a{
+			color: white;
+			text-shadow: none;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		a:hover {
+			color: grey;
+		}
+		.active > a {
+			background-color: #000033;
+		}
+	}
+}
+#container-site {
+	.container-fluid;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1024px;
+}
+#slider {
+	.rounded-corners;
+	padding: 1em;
+	background-color: black;
+}
+#container-content {
+	.well;
+	.container-fluid;
+}
+#newsletter-signup {
+	color: white;
+	background-color: #000033;
+	legend {
+		color: white;
+	}
+}
+#testimonials {
+	color: white;
+	background-color: #600;
+}
+#article, #featured-products {
+	background-color: white;
+}
+#footer {
+	padding-top: 120px;
+	background: transparent url('../img/social.png') top center no-repeat;
+}

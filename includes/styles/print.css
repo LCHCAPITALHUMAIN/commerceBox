@@ -1,0 +1,6 @@
+#fheader{
+	display:none;
+}
+#header h1, #header p{
+	display:block;
+}

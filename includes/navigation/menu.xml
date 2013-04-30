@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<menu name="navigation">
+	<menu name="HOME" link="/" />
+	<menu name="ABOUT US" link="/index.cfm/about">
+		<item name="Breaking News" link="/index.cfm/about/news" />
+	</menu>
+	<menu name="PRODUCTS" link="/index.cfm/product">
+			<item name="DVD" link="/index.cfm/product/list/format/1" />
+			<item name="CD" link="/index.cfm/product/list/format/2" />
+			<item name="Cassette" link="/index.cfm/product/list/format/3" />
+			<item name="Reference Compilations" link="/index.cfm/product/list/format/4" />
+		<item name="Checkout" link="/index.cfm/cart" />
+	</menu>
+	<menu name="ARTICLES" link="/index.cfm/article">
+		<item name="From Glory to Glory" link="/index.cfm/article/list/1" />
+		<item name="Russian: From Glory to Glory" link="/index.cfm/article/list/2" />
+	</menu>
+	<menu name="MEDIA" link="/index.cfm/media/video">
+		<item name="Streaming Video" link="/index.cfm/media/video" />
+		<item name="Streaming Audio" link="/index.cfm/media/audio" />
+		<item name="Podcasts" link="/index.cfm/media/podcast" />
+	</menu>
+	<menu name="CONTACT US" link="/index.cfm/contact" />
+</menu>

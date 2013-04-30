@@ -1,0 +1,51 @@
+.tiny-ie-hack { height: 100%; width: 100%; overflow: hidden; }
+
+#tiny-over {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 1000;
+	display: none;
+	background-color: #000;
+	opacity: 0.9;
+} * html #tiny-over { position: absolute; filter: alpha(opacity=90); }
+
+#tiny-load {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 2000;
+	display: none;
+	background: transparent url(../../images/throbber.gif) center no-repeat;
+} * html #tiny-load { position: absolute; }
+
+#tiny-tbox {
+	width: 500px;
+	height: auto;
+	position: fixed;
+	top: 15px; left: 50%;
+	margin-left: -255px;
+	z-index: 1500;
+	display: none;
+	background:#e5e1d6 url(../../images/main-bg.jpg) no-repeat;
+	border: 1px solid #000;
+} * html #tiny-tbox { position: absolute; }
+
+.modal-container{
+	padding:10px; padding-bottom:35px;
+	background:url(../../images/main-bottom-bg.jpg) bottom left no-repeat;
+}
+.modal-container .close a{
+	color:#600;
+	float:right;
+	margin: 0 5px;
+	font-size:1.5em;
+	font-weight: bolder;
+	text-decoration:none;
+}
+.modal-container .close a:hover{
+	color:#000;
+	font-size:1.7em;
+}

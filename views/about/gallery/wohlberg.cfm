@@ -1,0 +1,31 @@
+<div class="sidebar">
+	<div class="outerbox">
+		<h3>About Us</h3>
+		<div class="innerbox">
+			<div>
+				<ul>
+					<li><a href="#getSetting("sesBaseURL")#/about.beliefs" title="We Believe">We Believe</a></li>
+					<li><a href="#getSetting("sesBaseURL")#/about.staff" title="Our Staff">Staff</a></li>
+					<li><a href="#getSetting("sesBaseURL")#/about.donate" title="Donate Online">Donate Online</a></li>
+					<li><a href="#getSetting("sesBaseURL")#/about.news" title="Breaking News">Breaking News</a></li>
+					<li><a href="#getSetting("sesBaseURL")#/about.gallery" title="Photo Gallery">Photo Gallery</a></li>
+					<li><a href="#getSetting("sesBaseURL")#/about.media" title="Media Kit">Media Kit</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="column-w573 left">
+	<div class="outerbox">
+		<div class="boxtab"><h2>The Wohlbergs</h2></div>
+		<div class="innerbox">
+			<div id="gallery">
+				<div><a href="/images/gallery/wohlberg_family.jpg" rel="lightbox[wohlberg]" title="Steve, Krisitin and Seth Wohlberg"><img src="/includes/images/gallery/wohlberg_family_thumb.jpg"  /></a></div>
+				<div><a href="/images/gallery/wohlberg_ss.jpg" rel="lightbox[wohlberg]" title="Steve and Seth Wohlberg"><img src="/includes/images/gallery/wohlberg_ss_thumb.jpg"  /></a></div>
+				<div><a href="/images/gallery/wohlberg_seth_friends.jpg" rel="lightbox[wohlberg]" title="Seth Wohlberg and his friends"><img src="/includes/images/gallery/wohlberg_seth_friends_thumb.jpg"  /></a></div>
+			</div>
+			<div style="clear:left"></div>
+		</div>
+	</div>
+</div>

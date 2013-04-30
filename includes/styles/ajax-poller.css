@@ -1,0 +1,58 @@
+.poller input{	/* The poller box */
+	border:none;
+}
+#poller a img{
+	margin-top:.5em;
+}
+/* Poller title above radio buttons */
+.pollerTitle,.result_pollerTitle{
+	margin-bottom:5px;
+	font-weight:bold;
+}
+/* Label for each radio button */
+.pollerOption{
+	margin:0;
+}
+/* Label for each option above graph - i.e. results */
+.result_pollerOption{
+	margin:0;
+	font-size:0.8em;
+}
+/* Don't change this one, it is used to get the left and right image(the corner) positioned correctly */
+.result_pollGraph img{
+	float:left;
+}
+/* The <div> tag where the percentage result is shown */
+.result_pollGraph div{
+	float:left;
+	background-repeat:repeat-x;
+	color:#fff;
+	padding-right:.6em;
+}
+/* Graph div - parent of both the corner images and the div displaying percentage votes */
+.result_pollGraph{	
+	height:.7em;
+	margin-bottom:.5em !important;
+}
+
+/* Message when Ajax is working getting restults from the server */
+.poller_waitMessage{
+	display:none;	
+	margin:0; padding:5px;
+	background:#fcfcfc url(../images/innerbox-bg.jpg) no-repeat;
+}	
+
+.result_totalVotes{
+	font-size:.8em;
+	margin:2px; padding:0;
+	font-weight:bold;
+}
+label{
+	float:none;
+	font-weight:normal;
+}
+#poller_results{
+	display:none;
+	margin:0; padding:5px;
+	background:#fcfcfc url(../images/innerbox-bg.jpg) no-repeat;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<menu name="navigation">
+	<menu name="HOME" link="/admin/index.cfm">
+	</menu>
+	<menu name="Products" link="/admin/index.cfm/product">
+	</menu>
+	<menu name="ARTICLES" link="/admin/index.cfm/article">
+		<item name="Articles" link="/admin/index.cfm/article/list" />
+		<item name="Categories" link="/admin/index.cfm/article/sectionlist" />
+		<item name="Featured" link="/admin/index.cfm/article/featuredlist" />
+	</menu>
+	<menu name="STREAMING" link="/admin/index.cfm/media">
+	</menu>
+	<menu name="Log Out" link="/admin/index.cfm/main/doLogout" />
+</menu>
