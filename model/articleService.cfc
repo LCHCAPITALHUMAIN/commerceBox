@@ -53,7 +53,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("Article",map) />
+		<cfreturn entityNew("Article").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savearticle" access="public" output="false" returntype="void">
@@ -91,8 +91,8 @@
 			FROM articles as Article JOIN article_featured as Featured 
 			where Article.islive = 1 
 			AND Featured.datestart < <cfqueryparam value="#arguments.curdate#" cfsqltype="cf_sql_date"> 
-			AND Featured.dateend > <cfqueryparam value="#arguments.sectionid#" cfsqltype="cf_sql_date"> 
-			ORDER BY Featured.end DESC
+			AND Featured.dateend > <cfqueryparam value="#arguments.curdate#" cfsqltype="cf_sql_date"> 
+			ORDER BY Featured.dateend DESC
 		</cfquery>
 		
 		<cfreturn rs />
@@ -142,7 +142,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ArticleAauthor",map) />
+		<cfreturn entityNew("ArticleAauthor").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="saveauthor" access="public" output="false" returntype="void">
@@ -172,13 +172,13 @@
 	</cffunction>
 
 	<cffunction name="getsections" access="public" output="false" returntype="any">
-		<cfargument name="id" type="Numeric" required="false" />
-		<cfargument name="title" type="String" required="false" />
-		<cfargument name="summary" type="String" required="false" />
-		<cfargument name="views" type="Numeric" required="false" />
-		<cfargument name="islive" type="Numeric" required="false" />
-		<cfargument name="orderby" type="string" default="id" />
-		<cfargument name="orderasc" type="Numeric" default=1 />
+		<cfargument name="id" type="numeric" required="false" />
+		<cfargument name="title" type="string" required="false" />
+		<cfargument name="summary" type="string" required="false" />
+		<cfargument name="views" type="numeric" required="false" />
+		<cfargument name="islive" type="boolean" required="false" />
+		<cfargument name="orderby" type="string" required="false" />
+		<cfargument name="orderasc" type="numeric" required="false" />
 		
 		<cfset var map = structNew() />
 		
@@ -198,7 +198,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ArticleSection",map) />
+		<cfreturn entityNew("ArticleSection").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savesection" access="public" output="false" returntype="void">
@@ -250,7 +250,7 @@
 			<cfset map.end = arguments.end />
 		</cfif>
 		
-		<cfreturn entityLoad("ArticleFeatured",map) />
+		<cfreturn entityNew("ArticleFeatured").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savefeatured" access="public" output="false" returntype="void">

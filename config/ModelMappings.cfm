@@ -25,7 +25,6 @@ Description :
 	
 	addModelMapping(alias="announcementService",path="announcementService");
 	addModelMapping(alias="articleService",path="articleService");
-	addModelMapping(alias="articleService",path="articleService");
 	addModelMapping(alias="newsletterService",path="newsletterService");
 	addModelMapping(alias="pollService",path="pollService");
 	addModelMapping(alias="productService",path="productService");

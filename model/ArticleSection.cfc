@@ -4,11 +4,18 @@
 component persistent="true" table="article_sections" extends="coldbox.system.orm.hibernate.ActiveEntity"{
 
 	// Primary Key
-	property name="id" fieldtype="id" column="id" generator="increment";
+	property name="id" fieldtype="id" generator="increment";
 	
 	// Properties
-	property name="title" ormtype="string";	property name="alias" ormtype="string";	property name="summary" ormtype="string";	property name="keywords" ormtype="string";	property name="views" ormtype="integer";	property name="islive" ormtype="boolean";	
+	property name="title" ormtype="string";
+	property name="alias" ormtype="string";
+	property name="summary" ormtype="string";
+	property name="keywords" ormtype="string";
+	property name="views" ormtype="integer";
+	property name="islive" ormtype="boolean";
 	
+	// Relationships
+			
 	// Validation
 	this.constraints = {
 		// Example: age = { required=true, min="18", type="numeric" }

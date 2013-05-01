@@ -88,7 +88,7 @@ Optional Methods
 		settings = {
 			siteName 			= "Stand 4 Second Ammendment",
 			tagLine 			= "",
-            keywords			= "second ammendment", 
+            keywords			= "second ammendment, national rifle association", 
 			PagingMaxRows		= "10",
 			PagingBandGap		= "10"
 		};

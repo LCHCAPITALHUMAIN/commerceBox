@@ -51,7 +51,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-	<cfreturn entityLoad("Product",map) />
+	<cfreturn entityNew("Product").list(criteria=map,asquery=true) />
 	</cffunction>
 	
 	<cffunction name="getProductsByStreamFormat" access="public" output="false" returntype="query">
@@ -212,7 +212,7 @@
 			<cfset map.affiliate = arguments.affiliate />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductCustomer",map) />
+		<cfreturn entityNew("ProductCustomer").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savecustomer" access="public" output="false" returntype="void">
@@ -260,7 +260,7 @@
 			<cfset map.end = arguments.end />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductFeatured",map) />
+		<cfreturn entityNew("ProductFeatured").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savefeatured" access="public" output="false" returntype="void">
@@ -312,7 +312,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductFormat",map) />
+		<cfreturn entityNew("ProductFormat").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="saveformat" access="public" output="false" returntype="void">
@@ -376,7 +376,7 @@
 			<cfset map.specialprice = arguments.specialprice />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductItem",map) />
+		<cfreturn entityNew("ProductItem").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="saveitem" access="public" output="false" returntype="void">
@@ -436,7 +436,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductReview",map) />
+		<cfreturn entityNew("ProductReview").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savereview" access="public" output="false" returntype="void">
@@ -488,7 +488,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductSection",map) />
+		<cfreturn entityNew("ProductSection").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savesection" access="public" output="false" returntype="void">
@@ -536,7 +536,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductSize",map) />
+		<cfreturn entityNew("ProductSize").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="savesize" access="public" output="false" returntype="void">
@@ -596,7 +596,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductStream",map) />
+		<cfreturn entityNew("ProductStream").list(criteria=map,asquery=true) />
 	</cffunction>
 	
 	<cffunction name="getStreamsByFormatAndProduct" access="public" output="false" returntype="query">
@@ -657,7 +657,7 @@
 			<cfset map.image = arguments.image />
 		</cfif>
 		
-		<cfreturn entityLoad("ProductImage",map) />
+		<cfreturn entityNew("ProductImage").list(criteria=map,asquery=true) />
 	</cffunction>
 
 	<cffunction name="saveImage" access="public" output="false" returntype="void">
