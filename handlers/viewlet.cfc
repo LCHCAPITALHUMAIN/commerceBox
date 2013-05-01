@@ -20,9 +20,9 @@
       <cfscript>
 	  		var rc = event.getCollection();
 			rc.tabService = tabService;
-      		rc.tabs = rc.tabService.getTabs();
-			rc.qProductSections = productService.getSections(orderby="views",orderasc=0);
-			rc.qArticleSections = articleService.getSections(orderby="views",orderasc=0);
+      		rc.tabs = entityToQuery(rc.tabService.getTabs());
+			rc.qProductSections = entityToQuery(productService.getSections(orderby="views",orderasc=0));
+			rc.qArticleSections = entityToQuery(articleService.getSections(orderby="views",orderasc=0));
       </cfscript>
 	</cffunction>
 	

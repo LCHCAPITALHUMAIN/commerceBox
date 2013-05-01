@@ -47,7 +47,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("announcement.announcement",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("announcement.announcement",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="saveannouncement" access="public" output="false" returntype="void">

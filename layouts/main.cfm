@@ -38,11 +38,7 @@
 				<div id="nav-utility" class="navbar span4">
   				<div class="navbar-inner">
 						<div class="container">
-								<ul class="nav nav-pills">
-									<li><a href="##">SIGN IN</a></li>
-									<li><a href="##">JOIN</a></li>
-									<li><a href="##">SUBSCRIBE</a></li>
-								</ul>
+							#renderView('viewlets/nav-utils')#
 						</div><!-- end container -->
 					</div><!-- end navbar-inner -->
 				</div><!-- end navbar -->
@@ -52,14 +48,7 @@
 				<div id="nav-site" class="navbar">
   				<div class="navbar-inner">
 						<div class="container">
-								<ul class="nav nav-pills">
-									<li class="active"><a href="##">Home</a></li>
-									<li><a href="##">Take Action</a></li>
-									<li><a href="##">News/Facts</a></li>
-									<li><a href="##">Calendar</a></li>
-									<li><a href="##">Our Mission</a></li>
-									<li><a href="##">Contact Us</a></li>
-								</ul>
+							#renderView('viewlets/sitenav')#
 						</div><!-- end container -->
 					</div><!-- end navbar-inner -->
 				</div><!-- end navbar -->
@@ -68,18 +57,19 @@
 				
       </div><!-- end page-header -->
 			
-			<div id="container-content">
+		<div id="container-content">
+		
+			<ul class="breadcrumb">
+				<li class="active"><a href="##">Home</a> <span class="divider">/</span></li>
+			</ul>
 			
-				<ul class="breadcrumb">
-					<li class="active"><a href="##">Home</a> <span class="divider">/</span></li>
-				</ul>
-				
-				#renderView()#
-			</div><!-- end container-content -->
+			#renderView()#
+		</div><!-- end container-content -->
 			
-			<div id="footer">
-        <p class="copyright">Copyright &copy; #year(Now())# #getController().getSetting("siteName")#. All Rights Reserved.</p>
-      </div>
+		<div id="footer">
+			#renderView('viewlets/sitenav')#
+	        <p class="copyright">Copyright &copy; #year(Now())# #getController().getSetting("siteName")#. All Rights Reserved.</p>
+	    </div>
 			
 		</div><!-- end container-site -->
 	</body>

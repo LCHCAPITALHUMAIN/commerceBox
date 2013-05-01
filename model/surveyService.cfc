@@ -63,7 +63,7 @@
 			<cfset map.isfeatured = arguments.isfeatured />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("survey.survey",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("survey.survey",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="savesurvey" access="public" output="false" returntype="void">
@@ -118,7 +118,7 @@
 			<cfset map.isfeatured = arguments.isfeatured />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("survey.question",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("survey.question",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="savequestion" access="public" output="false" returntype="void">
@@ -161,7 +161,7 @@
 			<cfset map.title = arguments.title />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("SurveyQuestionType",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("SurveyQuestionType",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="savequestionType" access="public" output="false" returntype="void">
@@ -205,7 +205,7 @@
 			<cfset map.answer = arguments.answer />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("survey.option",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("survey.option",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="saveoption" access="public" output="false" returntype="void">
@@ -249,7 +249,7 @@
 			<cfset map.ipaddress = arguments.ipaddress />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("survey.answer",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("survey.answer",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 	
 	<cffunction name="getAnswerCount" access="public" output="false" returntype="numeric">

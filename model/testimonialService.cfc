@@ -35,7 +35,7 @@
 			<cfset map.content = arguments.content />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("testimonial.testimonial",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("testimonial.testimonial",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 	
 	<cffunction name="getRandomTestimonial" access="public" output="false" returntype="any">

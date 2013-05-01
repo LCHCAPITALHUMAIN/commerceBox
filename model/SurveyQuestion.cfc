@@ -7,16 +7,16 @@ component persistent="true" table="survey_questions" extends="coldbox.system.orm
 	property name="id" fieldtype="id" column="id" generator="increment";
 	
 	// Properties
-	property name="title" ormtype="string";	property name="survey_question_type_id" ormtype="integer";	property name="islive" ormtype="boolean";	
+	property name="title" ormtype="string";	property name="islive" ormtype="boolean";	
 	// Relationships
 	property name="QuestionType" 
 			 fieldtype="many-to-one" 
 			 fkcolumn="survey_question_type_id" 
-			 cfc="QuestionType";
+			 cfc="SurveyQuestionType";
 	property name="Option"
 			 type="array" 
 			 fieldtype="one-to-many"
-			 cfc="SurveyOption"
+			 cfc="SurveyQuestionOption"
 			 fkcolumn="survey_question_id";
 			 
 	// Validation

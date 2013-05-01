@@ -53,7 +53,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("article.article",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("Article",map) />
 	</cffunction>
 
 	<cffunction name="savearticle" access="public" output="false" returntype="void">
@@ -142,7 +142,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("article.author",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ArticleAauthor",map) />
 	</cffunction>
 
 	<cffunction name="saveauthor" access="public" output="false" returntype="void">
@@ -198,7 +198,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("article.section",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ArticleSection",map) />
 	</cffunction>
 
 	<cffunction name="savesection" access="public" output="false" returntype="void">
@@ -250,7 +250,7 @@
 			<cfset map.end = arguments.end />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("article.featured",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ArticleFeatured",map) />
 	</cffunction>
 
 	<cffunction name="savefeatured" access="public" output="false" returntype="void">

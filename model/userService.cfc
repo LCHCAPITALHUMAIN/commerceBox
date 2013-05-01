@@ -43,7 +43,7 @@
 			<cfset map.password = arguments.password />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("user.user",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("user.user",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 	
 	<cffunction name="validateUser" access="public" returntype="struct" output="false">

@@ -11,7 +11,7 @@ component persistent="true" table="users" extends="coldbox.system.orm.hibernate.
 	// Relationships
 	property name="Roles"
 			fieldtype="many-to-many" 
-			CFC="Role" 
+			CFC="UserRole" 
 			linktable="users_roles" 
 			FKColumn="user_id" 
 			inversejoincolumn="user_role_id" 

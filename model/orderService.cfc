@@ -39,7 +39,7 @@
 			<cfset map.total = arguments.total />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("order.order",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("order.order",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="saveorder" access="public" output="false" returntype="void">
@@ -111,7 +111,7 @@
 			<cfset map.country = arguments.country />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("order.billing",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("order.billing",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="savebilling" access="public" output="false" returntype="void">
@@ -171,7 +171,7 @@
 			<cfset map.price = arguments.price />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("order.item",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("order.item",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="saveitem" access="public" output="false" returntype="void">
@@ -243,7 +243,7 @@
 			<cfset map.country = arguments.country />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("order.shipping",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("order.shipping",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="saveshipping" access="public" output="false" returntype="void">

@@ -1,7 +1,7 @@
 /**
 * A cool ction name="crItem entity
 */
-component persistent="true" table="ction name="cr_items" extends="coldbox.system.orm.hibernate.ActiveEntity"{
+component persistent="true" table="product_items" extends="coldbox.system.orm.hibernate.ActiveEntity"{
 
 	// Primary Key
 	property name="id" fieldtype="id" generator="increment";
@@ -18,5 +18,5 @@ component persistent="true" table="ction name="cr_items" extends="coldbox.system
 	function init(){
 		super.init(useQueryCaching="false");
 		return this;
-	}
+	};
 }

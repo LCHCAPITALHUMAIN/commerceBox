@@ -1,6 +1,4 @@
 <cfcomponent name="productService" output="false" extends="coldbox.system.orm.hibernate.VirtualEntityService">
-	
-	
 
 	<cffunction name="init" access="public" output="false" returntype="model.productService">
 		<cfset super.init(entityName="Product") />
@@ -53,7 +51,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("Product",map,arguments.orderby,arguments.orderasc) />
+	<cfreturn entityLoad("Product",map) />
 	</cffunction>
 	
 	<cffunction name="getProductsByStreamFormat" access="public" output="false" returntype="query">
@@ -214,7 +212,7 @@
 			<cfset map.affiliate = arguments.affiliate />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.customer",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductCustomer",map) />
 	</cffunction>
 
 	<cffunction name="savecustomer" access="public" output="false" returntype="void">
@@ -262,7 +260,7 @@
 			<cfset map.end = arguments.end />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.featured",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductFeatured",map) />
 	</cffunction>
 
 	<cffunction name="savefeatured" access="public" output="false" returntype="void">
@@ -314,7 +312,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.format",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductFormat",map) />
 	</cffunction>
 
 	<cffunction name="saveformat" access="public" output="false" returntype="void">
@@ -378,7 +376,7 @@
 			<cfset map.specialprice = arguments.specialprice />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.item",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductItem",map) />
 	</cffunction>
 
 	<cffunction name="saveitem" access="public" output="false" returntype="void">
@@ -438,7 +436,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.review",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductReview",map) />
 	</cffunction>
 
 	<cffunction name="savereview" access="public" output="false" returntype="void">
@@ -490,7 +488,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.section",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductSection",map) />
 	</cffunction>
 
 	<cffunction name="savesection" access="public" output="false" returntype="void">
@@ -538,7 +536,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.size",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductSize",map) />
 	</cffunction>
 
 	<cffunction name="savesize" access="public" output="false" returntype="void">
@@ -598,7 +596,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.stream",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductStream",map) />
 	</cffunction>
 	
 	<cffunction name="getStreamsByFormatAndProduct" access="public" output="false" returntype="query">
@@ -659,7 +657,7 @@
 			<cfset map.image = arguments.image />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("product.image",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("ProductImage",map) />
 	</cffunction>
 
 	<cffunction name="saveImage" access="public" output="false" returntype="void">

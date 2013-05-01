@@ -39,5 +39,5 @@ component persistent="true" table="products" extends="coldbox.system.orm.hiberna
 	function init(){
 		super.init(useQueryCaching="false");
 		return this;
-	}
+	};
 }

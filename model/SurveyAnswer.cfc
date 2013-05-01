@@ -12,7 +12,7 @@ component persistent="true" table="survey_answers" extends="coldbox.system.orm.h
 	property name="Option" 
 			 fieldtype="many-to-one" 
 			 fkcolumn="survey_question_option_id" 
-			 cfc="SurveyOption";
+			 cfc="SurveyQuestionOption";
 			 
 	// Validation
 	this.constraints = {

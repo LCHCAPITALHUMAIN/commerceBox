@@ -35,7 +35,7 @@
 			<cfset map.content = arguments.content />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("quote.quote",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("quote.quote",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 	
 	<cffunction name="getRandomQuote" access="public" output="false" returntype="any">

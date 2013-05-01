@@ -23,7 +23,7 @@
 			<cfset map.alias = arguments.alias />
 		</cfif>
 
-		<cfreturn getTransfer().readByPropertyMap("tab.tab",map) />
+		<cfreturn entityLoad("Tab",map) />
 	</cffunction>
 
 	<cffunction name="gettabs" access="public" output="false" returntype="any">
@@ -61,7 +61,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("tab.tab",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("Tab",map) />
 	</cffunction>
 
 	<cffunction name="savetab" access="public" output="false" returntype="void">
@@ -134,7 +134,7 @@
 			<cfset map.islive = arguments.islive />
 		</cfif>
 		
-		<cfreturn getTransfer().listByPropertyMap("tab.page",map,arguments.orderby,arguments.orderasc) />
+		<cfreturn entityLoad("tab.page",map,arguments.orderby,arguments.orderasc) />
 	</cffunction>
 
 	<cffunction name="savePage" access="public" output="false" returntype="void">
