@@ -1,7 +1,7 @@
-			<div class="row-fluid">
+			<div id="home" class="row-fluid">
 					
 					<!--Body content-->
-					<div class="span8">
+					<div id="content">
 						
 						<div class="row-fluid">
 						
@@ -67,7 +67,7 @@
 						
 					</div><!-- end span9 -->
 					
-					<div class="span4">
+					<div class="sidebar">
 						<!--Sidebar content-->
 						<div id="newsletter-signup" class="well">
 							<form>

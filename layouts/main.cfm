@@ -17,7 +17,7 @@
 		<meta name="copyright" content="#getController().getSetting("siteName")# Copyright #year(Now())#. All rights reserved." />
 		<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
 		<cfinclude template="/includes/controllers/styles.cfm" />
-		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<link type="text/css" rel="stylesheet" href="/css/styles.css" />
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,23 +30,23 @@
 		
 			<div id="advert-header" class="row-fluid text-center">
 				<span>Interested in advertising on stand4secondammendment.com</span>
-				<a href=""><img src="img/banner-add.jpg" alt="advertisment" /></a>
+				<a href=""><img src="/img/banner-add.jpg" alt="advertisment" /></a>
 			</div>
 				
 			<div id="site-header">
 			
 				<div id="nav-utility" class="navbar span4">
-  				<div class="navbar-inner">
+					<div class="navbar-inner">
 						<div class="container">
 							#renderView('viewlets/nav-utils')#
 						</div><!-- end container -->
 					</div><!-- end navbar-inner -->
 				</div><!-- end navbar -->
 				
-				<a href=""><img src="img/logo.png" alt="Stand4secondAmmendment" /></a>
+				<a href=""><img src="/img/logo.png" alt="Stand4secondAmmendment" /></a>
 				
 				<div id="nav-site" class="navbar">
-  				<div class="navbar-inner">
+					<div class="navbar-inner">
 						<div class="container">
 							#renderView('viewlets/sitenav')#
 						</div><!-- end container -->
@@ -55,28 +55,24 @@
 				
 				<br class="clearfix" />
 				
-      </div><!-- end page-header -->
-			
-		<div id="container-content">
-		
-			<ul class="breadcrumb">
-				<li class="active"><a href="##">Home</a> <span class="divider">/</span></li>
-			</ul>
-			
-			#renderView()#
-		</div><!-- end container-content -->
-			
-		<div id="footer">
-			#renderView('viewlets/sitenav')#
-	        <p class="copyright">Copyright &copy; #year(Now())# #getController().getSetting("siteName")#. All Rights Reserved.</p>
-	    </div>
+	      	</div><!-- end page-header -->
+				
+			<div id="container-content">
+				
+				#renderView()#
+			</div><!-- end container-content -->
+				
+			<div id="footer">
+				#renderView('viewlets/sitenav')#
+		        <p class="copyright">Copyright &copy; #year(Now())# #getController().getSetting("siteName")#. All Rights Reserved.</p>
+		    </div>
 			
 		</div><!-- end container-site -->
 	</body>
 	
 	<!-- load in javascript -->
 	<script src="//code.jquery.com/jquery.js"></script>
-	<script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/lib/bootstrap.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="/js/lib/bootstrap.min.js"></script>
 </cfoutput>
 </html>
